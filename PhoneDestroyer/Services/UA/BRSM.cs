@@ -17,7 +17,7 @@ namespace PhoneDestroyer.Services
         {
             // data from decompiled apk
             // TODO: Check if user already registerd, and if so send "Forgot password" request
-            var resp = await Client.PostAsync("https://td4.brsm-nafta.com/api/v2/Mobile/step1?apiKey=AIzaSyDyIF5QfJtEXJWL1GwIoEt4zyM8dH6KHa8",
+            var resp = await Client.PostAsync("https://td4.brsm-nafta.com/api/v2/Mobile/step1",
                 new StringContent(JsonSerializer.Serialize(
                     new
                     {
